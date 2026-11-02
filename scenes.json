@@ -37,12 +37,6 @@
    "landscape": true
   },
   {
-   "label": "Dish B",
-   "m": "dish_low4.json",
-   "mono": false,
-   "landscape": true
-  },
-  {
    "label": "Pixel Room",
    "m": "pixel.json",
    "mono": false,
