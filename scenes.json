@@ -1,0 +1,46 @@
+{
+ "scenes": [
+  {
+   "label": "Manga",
+   "m": "manga.json",
+   "mono": true,
+   "landscape": false
+  },
+  {
+   "label": "Torii",
+   "m": "torii_s2.json",
+   "mono": false,
+   "landscape": true
+  },
+  {
+   "label": "Candy Shop",
+   "m": "shop_s2.json",
+   "mono": false,
+   "landscape": true
+  },
+  {
+   "label": "Bus Stop",
+   "m": "busstop_s2.json",
+   "mono": false,
+   "landscape": true
+  },
+  {
+   "label": "Cat",
+   "m": "cat_s1.json",
+   "mono": false,
+   "landscape": true
+  },
+  {
+   "label": "Dish",
+   "m": "dish_s2.json",
+   "mono": false,
+   "landscape": true
+  },
+  {
+   "label": "Pixel Room",
+   "m": "pixel.json",
+   "mono": false,
+   "landscape": false
+  }
+ ]
+}
