@@ -80,7 +80,7 @@ body.imm #immbar { opacity:.9; } body.imm #immbar.dim { opacity:.5; }
     <button id="ctr" type="button" hidden title="Use the current hold as the front">Recenter</button>
     <button id="fs" type="button" class="primary" title="Fill the screen (Esc to exit)"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Fullscreen</button>
     <details class="more"><summary>Settings</summary><div class="morebox">
-    <label class="rng" title="How far the view turns when the phone is tilted by ±20° (screen edge for pointer). Larger = more turn from a small tilt">Sensitivity <input id="span" type="range" min="10" max="180" step="5" value="90" aria-label="Sensitivity"><b id="spanv">±90°</b></label>
+    <label class="rng" title="How far the view turns when the phone is tilted by ±20° (screen edge for pointer). Larger = more turn from a small tilt">Sensitivity <input id="span" type="range" min="10" max="180" step="5" value="80" aria-label="Sensitivity"><b id="spanv">±90°</b></label>
     <label class="rng" title="Total range the view can turn. 360° = a full orbit">Max <input id="maxa" type="range" min="30" max="360" step="10" value="360" aria-label="Maximum angle"><b id="maxv">360°</b></label>
     <button id="inv" type="button" aria-pressed="false" title="Reverse the direction">Reverse</button>
     <button id="bub" type="button" aria-pressed="true" title="Show speech bubbles">Bubbles</button>
@@ -408,7 +408,7 @@ body.imm #immbar { opacity:.9; } body.imm #immbar.dim { opacity:.5; }
   $('mono').onclick = () => { cfg.mono = !cfg.mono; applyMono(); saveCfg(); };
 
   // ---- tilt view: the device's sideways tilt (hx in -1..1) turns every panel, so the phone works like a window onto the scene ----
-  const look = { mode: 'off', sens: cfg.sens || 90, max: cfg.max || 360, hx: 0, ptr: 0, tilt: 0, inv: !!cfg.inv, raf: 0, t: 0, stop: null };
+  const look = { mode: 'off', sens: cfg.sens || 80, max: cfg.max || 360, hx: 0, ptr: 0, tilt: 0, inv: !!cfg.inv, raf: 0, t: 0, stop: null };
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   const say = t => { $('status').textContent = t; };
   function lookTick(t) {
