@@ -1,0 +1,21 @@
+{
+  "page": "blue-maid.jpg",
+  "size": [
+    540,
+    960
+  ],
+  "panels": [
+    {
+      "id": "blue-maid",
+      "rect": [
+        0,
+        0,
+        540,
+        960
+      ],
+      "video": "videos/blue-maid.mp4"
+    }
+  ],
+  "bubbles": [],
+  "version": "blue-maid-20261103-1"
+}
